@@ -1,0 +1,71 @@
+{
+  "services": [
+    {
+      "name": "RabbitMQ",
+      "type": "rabbit_mq",
+      "host": {
+        "env": "RABBIT_MQ_HOST"
+      },
+      "vhost": {
+        "value": "/"
+      },
+      "username": {
+        "env": "RABBIT_MQ_USERNAME"
+      },
+      "password": {
+        "env": "RABBIT_MQ_PASSWORD"
+      },
+      "timeout": 60,
+      "retry": 100,
+      "interval": 1
+    },
+    {
+      "name": "MySQL",
+      "type": "mysql",
+      "host": {
+        "env": "DB_HOST"
+      },
+      "username": {
+        "env": "DB_USERNAME"
+      },
+      "password": {
+        "env": "DB_PASSWORD"
+      },
+      "timeout": 60,
+      "retry": 100,
+      "interval": 1
+    },
+    {
+      "name": "InfluxDB",
+      "type": "influxdb",
+      "host": {
+        "env": "INFLUX_DB_HOST"
+      },
+      "username": {
+        "env": "INFLUX_DB_USERNAME"
+      },
+      "password": {
+        "env": "INFLUX_DB_PASSWORD"
+      },
+      "timeout": 60,
+      "retry": 100,
+      "interval": 1
+    },
+    {
+      "name": "Redis",
+      "type": "redis",
+      "host": {
+        "env": "REDIS_HOST"
+      },
+      "username": {
+        "env": "REDIS_USERNAME"
+      },
+      "password": {
+        "env": "REDIS_PASSWORD"
+      },
+      "timeout": 60,
+      "retry": 100,
+      "interval": 1
+    }
+  ]
+}
